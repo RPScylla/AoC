@@ -73,7 +73,10 @@ namespace RPSonline.AoC
             Console.Write("Day number:    [");
 
             // Get all available days.
-            foreach (string day in callingAssembly.GetTypes().Where(type => type.Namespace.Equals(_daysNamespace)).Select(type => type.Name))
+            foreach (string day in callingAssembly.GetTypes()
+                                    .Where(type => type.Namespace.Equals(_daysNamespace) &&
+                                                   type.Name.StartsWith("Day"))
+                                    .Select(type => type.Name))
             {
                 // Remove Day prefix leaving only the day number.
                 Console.Write($"{day.Remove(0, 3)}, ");
