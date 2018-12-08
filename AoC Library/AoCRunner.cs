@@ -10,8 +10,8 @@ namespace RPSonline.AoC
     /// </summary>
     public class AoCRunner
     {
-        private string _daysNamespace;
-        private string _year;
+        private readonly string _daysNamespace;
+        private readonly string _year;
 
         /// <summary>
         /// Default Constructor.
