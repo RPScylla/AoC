@@ -1,15 +1,23 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.IO;
 
 namespace RPSonline.AoC.E2018.Days
 {
+
+    [Export(typeof(IDay))]
+    [ExportMetadata("Year", Consts.AOC_YEAR)]
+    [ExportMetadata("Day", AOC_DAY)]
     class Day1 : IDay
     {
+        private const int AOC_DAY = 1;
+
         private readonly string[] _input;
 
         public Day1()
         {
-            _input = File.ReadAllLines("Inputs/Day1.txt");
+            _input = File.ReadAllLines(FileHelper.GetInputLocation(AOC_DAY, Consts.AOC_YEAR));
         }
 
         public AnswerModel Solve()
@@ -18,7 +26,7 @@ namespace RPSonline.AoC.E2018.Days
 
             // Keep track of current frequency.
             int frequency = 0;
-            
+
             // Keep track of visited frequencies.
             HashSet<int> frequencyVisited = new HashSet<int>();
 

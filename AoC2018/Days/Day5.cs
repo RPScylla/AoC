@@ -1,16 +1,22 @@
 ﻿using System;
+using System.ComponentModel.Composition;
 using System.IO;
 using System.Text;
 
 namespace RPSonline.AoC.E2018.Days
 {
+    [Export(typeof(IDay))]
+    [ExportMetadata("Year", Consts.AOC_YEAR)]
+    [ExportMetadata("Day", AOC_DAY)]
     class Day5 : IDay
     {
+        private const int AOC_DAY = 5;
+
         private readonly string _input;
 
         public Day5()
         {
-            _input = File.ReadAllText("Inputs/Day5.txt");
+            _input = File.ReadAllText(FileHelper.GetInputLocation(AOC_DAY, Consts.AOC_YEAR));
         }
 
         public AnswerModel Solve()

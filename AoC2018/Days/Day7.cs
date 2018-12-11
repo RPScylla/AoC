@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -6,14 +7,19 @@ using System.Text.RegularExpressions;
 
 namespace RPSonline.AoC.E2018.Days
 {
+    [Export(typeof(IDay))]
+    [ExportMetadata("Year", Consts.AOC_YEAR)]
+    [ExportMetadata("Day", AOC_DAY)]
     class Day7 : IDay
     {
+        private const int AOC_DAY = 7;
+
         private readonly string[] _input;
         private readonly Regex _regex;
 
         public Day7()
         {
-            _input = File.ReadAllLines("Inputs/Day7.txt");
+            _input = File.ReadAllLines(FileHelper.GetInputLocation(AOC_DAY, Consts.AOC_YEAR));
             _regex = new Regex("Step ([A-Za-z]) must be finished before step ([A-Za-z]) can begin.", RegexOptions.Compiled);
         }
 

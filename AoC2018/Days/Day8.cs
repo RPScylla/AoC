@@ -1,16 +1,23 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.IO;
 using System.Linq;
 
 namespace RPSonline.AoC.E2018.Days
 {
+    [Export(typeof(IDay))]
+    [ExportMetadata("Year", Consts.AOC_YEAR)]
+    [ExportMetadata("Day", AOC_DAY)]
     class Day8 : IDay
     {
+        private const int AOC_DAY = 8;
+
         private readonly string[] _input;
 
         public Day8()
         {
-            _input = File.ReadAllText("Inputs/Day8.txt").Split(' ');
+            _input = File.ReadAllText(FileHelper.GetInputLocation(AOC_DAY, Consts.AOC_YEAR)).Split(' ');
         }
 
 

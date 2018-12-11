@@ -1,19 +1,26 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.Composition;
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 
 namespace RPSonline.AoC.E2018.Days
 {
+    [Export(typeof(IDay))]
+    [ExportMetadata("Year", Consts.AOC_YEAR)]
+    [ExportMetadata("Day", AOC_DAY)]
     class Day4 : IDay
     {
+        private const int AOC_DAY = 4;
+
         private readonly string[] _input;
         private readonly Regex _regex;
 
         public Day4()
         {
-            _input = File.ReadAllLines("Inputs/Day4.txt");
+            _input = File.ReadAllLines(FileHelper.GetInputLocation(AOC_DAY, Consts.AOC_YEAR));
             _regex = new Regex(@"\[(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})\] (?:Guard #(\d+) begins shift|(falls asleep)|(wakes up))", RegexOptions.Compiled);
         }
 

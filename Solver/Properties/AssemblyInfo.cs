@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AoC 2018")]
-[assembly: AssemblyDescription("Advent of Code resources for the 2018 calendar.")]
+[assembly: AssemblyTitle("AoC Solver")]
+[assembly: AssemblyDescription("Advent of Code Solver")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("RPSonline.nl")]
-[assembly: AssemblyProduct("AoC 2018")]
+[assembly: AssemblyProduct("AoC Solver")]
 [assembly: AssemblyCopyright("Copyright © RPSonline.nl 2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -21,7 +21,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("a2e2cabb-a9d7-4f2d-a9b5-68088aa3dede")]
+[assembly: Guid("1478c48a-13db-48ac-b306-63e7213b1a5a")]
 
 // Version information for an assembly consists of the following four values:
 //
