@@ -43,6 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Consts.cs" />
+    <Compile Include="Days\Day10.cs" />
+    <Compile Include="Days\Day9.cs" />
+    <Compile Include="Days\Day8.cs" />
     <Compile Include="Days\Day7.cs" />
     <Compile Include="Days\Day6.cs" />
     <Compile Include="Days\Day5.cs" />
