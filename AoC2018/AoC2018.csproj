@@ -51,6 +51,18 @@
     <Compile Include="Days\Day12.cs" />
     <Compile Include="Days\Day11.cs" />
     <Compile Include="Days\Day10.cs" />
+    <Compile Include="Days\Day18.cs" />
+    <Compile Include="Days\Day25.cs" />
+    <Compile Include="Days\Day24.cs" />
+    <Compile Include="Days\Day23.cs" />
+    <Compile Include="Days\Day22.cs" />
+    <Compile Include="Days\Day21.cs" />
+    <Compile Include="Days\Day20.cs" />
+    <Compile Include="Days\Day19.cs" />
+    <Compile Include="Days\Day17.cs" />
+    <Compile Include="Days\Day16.cs" />
+    <Compile Include="Days\Day15.cs" />
+    <Compile Include="Days\Day14.cs" />
     <Compile Include="Days\Day13.cs" />
     <Compile Include="Days\Day2.cs" />
     <Compile Include="Days\Day3.cs" />
@@ -76,6 +88,42 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Inputs\2018\Day11.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\2018\Day25.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\2018\Day24.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\2018\Day23.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\2018\Day22.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\2018\Day21.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\2018\Day20.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\2018\Day19.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\2018\Day18.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\2018\Day17.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\2018\Day15.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\2018\Day16.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\2018\Day14.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Inputs\2018\Day13.txt">
